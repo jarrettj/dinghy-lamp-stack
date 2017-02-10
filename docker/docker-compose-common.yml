@@ -1,0 +1,25 @@
+# Base compose file. Used for local development
+version: '2'
+services:
+  # Web server
+  apache:
+    build: applications/httpd
+    container_name: webserver
+  # PHP server
+  php-fpm:
+    build: applications/php-fpm
+    container_name: php_fpm
+    expose:
+      - "9000"
+  # Database
+  mysql:
+    build: applications/mysql
+    container_name: mysql
+    expose:
+      - "3306"
+  # Cache
+  redis:
+    build: applications/redis
+    container_name: redis
+    expose:
+      - "6379"

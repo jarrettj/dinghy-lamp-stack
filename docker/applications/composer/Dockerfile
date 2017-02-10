@@ -1,0 +1,2 @@
+# Composer
+FROM composer/composer

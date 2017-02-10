@@ -1,0 +1,29 @@
+#######################################
+# Webserver
+# PHP Debugger (xdebug|blackfire|none)
+PHP_DEBUGGER=xdebug
+XDEBUG_REMOTE_AUTOSTART=off
+XDEBUG_REMOTE_CONNECT_BACK=off
+XDEBUG_REMOTE_HOST=10.254.254.254
+XDEBUG_REMOTE_PORT=9001
+
+#######################################
+# Context container environment
+APP_ENV=development
+      
+#######################################
+# MySQL settings
+# -> if you change these settings
+#    you have to remove the database:
+#         docker-compose rm mysql
+#    because it's stored database in
+#    volume and provisioning is only
+#    done once.
+MYSQL_ROOT_PASSWORD=root
+MYSQL_USER=mysqluser
+MYSQL_PASSWORD=password
+MYSQL_DATABASE=development
+
+#######################################
+# Redis settings
+CACHE_HOST=redis

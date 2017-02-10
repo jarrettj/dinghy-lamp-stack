@@ -1,0 +1,3 @@
+# Redis
+FROM redis:latest
+

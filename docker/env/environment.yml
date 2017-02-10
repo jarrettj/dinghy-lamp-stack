@@ -1,0 +1,7 @@
+#######################################
+# Webserver
+
+# General
+WEB_DOCUMENT_ROOT=/var/www/html/public
+WEB_DOCUMENT_INDEX=index.php
+WEB_PHP_SOCKET=php_fpm:9000
