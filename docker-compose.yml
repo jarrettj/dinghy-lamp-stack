@@ -97,6 +97,18 @@ services:
     environment:
       - VIRTUAL_HOST=app.mail.docker
       - VIRTUAL_PORT=8025
+  # phpMyAdmin
+  phpmyadmin:
+    build: docker/applications/phpmyadmin
+    container_name: phpmyadmin
+    links:
+      - mysql
+    environment:
+      - PMA_ARBITRARY=1
+      - VIRTUAL_HOST=app.phpmyadmin.docker
+      - VIRTUAL_PORT=80
+    volumes:
+      - /sessions
       
 # Storage shared volume
 volumes:

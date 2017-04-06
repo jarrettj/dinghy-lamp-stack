@@ -11,6 +11,8 @@ We will require dinghy to make our lives easier. https://github.com/codekitchen/
 
 Dinghy has some cool addons compared to docker machine.
 
+Once Dinghy has been installed, you can shutdown the docker agent running.
+
 ## Docker images
 
 I try and make use of webdevops images where I can. https://github.com/webdevops/Dockerfile
@@ -65,6 +67,10 @@ Data file is read from data/sql/data.sql. You can obviously change this.
 ### PHP-FPM
 
 Executes PHP scripts.
+
+### PHPMyAdmin
+
+
 
 ### Redis
 
